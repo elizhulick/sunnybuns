@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Sunny Buns Cafe</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@800&display=swap" rel="stylesheet">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+ </head> 
+	
+<body>
+
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Sunny Buns Cafe </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#slide2" title="Next Section">About Us</a></li>
+		<li><a href="#slide3" title="Next Section">Menu</a></li>
+		<li><a  href="#slide4" title="Next Section">Sustainability</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+			<div id="christmas_tree"><img src="img/sun-cartoon.png" width="80" height="80" alt=""/> </div>
+		  <div id="snowflakes1"></div>
+		  <div id="snowflakes2"></div>
+          <h2>Welcome to</h2>
+		    <h1>Sunny Buns Cafe!</h1>
+		    <div id="divider"> </div>
+		     <h3>A Sustainable Seaside Cafe </h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes">Located in sunny Clearwater Beach, we are a family-owned, solar powered shack located right on the beach! We are committed to providing delicious food and beverages while also prioritizing the health of our planet. Come visit us and enjoy a meal while soaking up the rays! Located at 397 Mandalay Ave, Clearwater, FL 33767. Open 7 am to 5pm every day of the week!</h3>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			<h1>Menu</h1>
+			   <div id="menu">
+		      <h3> Vegan Pastries </h3> <h4> Assorted vegan pastires vary from day to day. Staples include donuts, croissants, peanut butter cookie bars, and our world-famous cinnamon rolls.</h4>  <h3> Organic Coffee </h3> 
+		 <h4> We source coffee from only the finest fair-trade and USDA-certified organic roasters. Our most popular roasts are Colombian, French Roast, Dark Chocolate, and our Home Blend!  Our baristas can make lattes, macchiatos, frappucinos, or whatever your go to drink is!</h4>  <h3> Whole-Grain Bread</h3> 
+		 <h4> Our most popular bread is our Whole-Grain Honey Loaves! We make them fresh in-house every morning with 14 whole grains and raw local honey.</h4> </div>
+			<div id="menu1">
+				<h3> Smoothie Bowls</h3>
+					<h4>Customers' Favorite! These smoothie bowls are packed full of nutrients and tasty ingredients that'll give you a refreshing snack to start your day or after a long day at the beach. Staple bowls are Strawberries 'n' Cream, Avocado and Kale, and Almond Butter and Raspberry.</h4>
+				<h3> Avocado Toast</h3>
+					<h4>Our avo toast will make your mouth water! Made with our Whole-Grain Honey Loaves, fresh avocado, and our in-house secret recipe seasoning, this will keep you fueled all day long!</h4>	<h3>Other Beverages</h3>
+					<h4>Besides coffee, we offer fresh smoothies, iced tea, hot tea, and freshly-squeezed orange juice! We also have a wide variety of alternative milks, including almond, oat, coconut, hazelnut, & cashew milk.</h4>	
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotes">Our cafe uses only sustainably and ethically sourced ingredients. We work with local farmers and fishermen to ensure that our menu is fresh and socially responsible. Our solar-powered energy system utilizes all the natural supply of solar energy that we have here in sunny Clearwater! We also attempt to be waste-free and turtle friendly with reusable dishes and straws. Our state-of-the-art sanitizing system ensures that our serveware is sterilized while also being sustainable! </h3>
+		</div> 
+		</div> 
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
